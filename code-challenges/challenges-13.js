@@ -107,6 +107,7 @@ const stringReverse = (str) => {
 const statistics = (obj) => {
   // write your code here
   //untill friday :()
+  //
 };
 
 module.exports = { objectCounter, stringReverse, statistics };
