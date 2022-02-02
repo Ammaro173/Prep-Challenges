@@ -105,9 +105,18 @@ const stringReverse = (str) => {
 // ------------------------
 
 const statistics = (obj) => {
-  // write your code here
-  //untill friday :()
-  //
+  let newobj = obj.reduce((previousValue, currentValue, currentIndex) => {
+    let ele = currentValue.votes_To;
+    // console.log(ele);
+    let value = 1;
+    if (!previousValue[ele]) {
+      previousValue[ele] = value;
+    } else {
+      previousValue[ele]++;
+    }
+    return previousValue;
+  }, {});
+  return newobj;
 };
 
 module.exports = { objectCounter, stringReverse, statistics };
