@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                "function howManyGames(p, d, m, s) {\n    let count =0\n    while(s>=p){\n            count++;\n            s -=p;\n            p = Math.max(p-d,m);\n    }return count;\n}\n"
+                "\nfunction howManyGames(p, d, m, s) {\n    let count =0\n    while(s>=p){\n            count++;\n            s -=p;\n            p = Math.max(p-d,m);\n    }return count;\n}\n"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function squares(a, b) {\n\n    let start = Math.ceil(Math.sqrt(a));\n    let end = Math.floor(Math.sqrt(b));\n    return (end - start + 1);\n    \n}"
             ],
             "outputs": []
         }
