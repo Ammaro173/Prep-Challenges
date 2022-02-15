@@ -74,22 +74,36 @@ const eveCharacter = (str) => {
 // [["grilled chicken"], ["baked chicken"], ["fried chicken"]];
 
 const chickenGradients = (arr) => {
+  ////// solution 1 !
+  // let chk = 'chicken';
+  // let result = [];
+
+  // arr.map((ele) => {
+  //   ele.map((e) => {
+  //     if (e.indexOf(chk) !== -1) {
+  //       result.push([e]);
+  //       console.log(result);
+  //     }
+  //   });
+
+  ////// solution 2 !!
   let chk = 'chicken';
   let result = [];
 
-  arr.map((ele) => {
-    ele.map((e) => {
-      if (e.indexOf(chk) !== -1) {
-        result.push([e]);
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i][j].indexOf(chk) !== -1) {
+        result.push([arr[i][j]]);
         console.log(result);
       }
-    });
-    // console.log(ele);
-    // if (ele[i].indexOf(chk) !== -1) {
-    //   result[i] = ele[i];
-    //   console.log(result)
-    // }
-  });
+    }
+  }
+  // console.log(ele);
+  // if (ele[i].indexOf(chk) !== -1) {
+  //   result[i] = ele[i];
+  //   console.log(result)
+  // }
+  // });
 
   return result;
 };
