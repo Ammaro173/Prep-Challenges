@@ -78,6 +78,11 @@ const filterLinks = (str) => {
 const isPalindrome = (str) => {
   // write your code here
   /// regex isnt not fun :(
+
+  var regecks = /[\W_]/g;
+  var lowRegStr = str.toLowerCase().replace(regecks, '');
+  var reverseStr = lowRegStr.split('').reverse().join('');
+  return reverseStr === lowRegStr;
 };
 // -------------------------------------------------------------------------------------------------------
 
