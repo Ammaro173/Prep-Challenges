@@ -15,10 +15,14 @@
 //
 // -------------
 
+
 function square(arr) {
   const newArray = arr.map((ele) => ele * ele);
+
   return newArray;
 }
+
+
 
 // 2) ------------------
 //
